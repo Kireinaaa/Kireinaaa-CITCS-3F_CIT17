@@ -1,0 +1,80 @@
+$ pkg install root-repo
+$ pkg install x11-repo
+$ pkg upgrade
+may lalabas na do you want to continue - Y
+$ clear
+$ pkg install apache2 mariadb php-apache -y
+$ pkg install git gh openssh -y
+
+ssh connecting phone and computer
+1. whoami - username
+u0_a310
+u0_a313
+2. passwd - create new password
+**
+3. sshd - to run ssh
+4. ifconfig - ip adress
+192.168.1.27
+
+note: ssh wil only work in the same network phone and pc
+
+connecting dudun~
+ssh username@ipaddress -p 8022
+
+put this in terminal in ur pc:
+ssh u0_a313@192.168.1.27 -p 8022
+
+connected.
+
+github userame:
+22901726-Kireinaaa
+
+in order to reconnect again you need to connect the phone in sshd type this in phone:
+
+$ sshd
+
+----
+commands:
+1. apachetl start - start apache server
+192.168.1.27:8080
+
+2. $ mysqld_safe - run mariadb 
+
+for the shortcut of apache:
+ ln -s /data/data/com.termux/files/usr/etc/apache2 apacheconfig
+
+cd apacheconfig
+nano httpd.config
+
+nano 
+/data/data/com.termux/files/usr/etc/apache2/httpd.conf
+
+copy and paste the code 
+ctrl o + enter 
+ctrl x - to exit
+cd /data/data/com.termux/files/usr/share
+git clone
+cd username ng git
+touch text.txt - try lang kung nagana
+cd
+
+restarting
+killall httpd
+killall mysqld_safe
+
+
+10:39
+<Directory "/data/data/com.termux/files/usr/share/apache2/default-site/htdocs">
+
+to open the mqsql:
+/data/data/com.termux/files/usr/bin/mariadb
+
+ to open maria db:
+/data/data/com.termux/files/usr/bin/mariadb -u root -p
+
+pkill mariadb
+apachectl restart
+
+cd /data/data/com.termux/files/usr/share/222901726-Kireinaaa/book_search
+
+nano search.php
